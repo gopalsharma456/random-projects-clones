@@ -1,14 +1,14 @@
-// var buttons = document.querySelectorAll(".key").length;
+var buttons = document.querySelectorAll(".key").length;
 
-// for (var i = 0; i < buttons; i++) {
-//   document.querySelectorAll(".key")[i].addEventListener("click", function () {
-//     var myDiv = this.innerHTML;
+for (var i = 0; i < buttons; i++) {
+  document.querySelectorAll(".key")[i].addEventListener("click", function () {
+    var myDiv = this.firstElementChild.innerHTML;
     
-//     console.log(myDiv)
-//     // audioPlay(activeKey);
-//     // buttonAnimation(activeKey);
-//   });
-// }
+    console.log(myDiv)
+    audioPlay(myDiv);
+    buttonAnimation(myDiv);
+  });
+}
 
 document.body.addEventListener("keydown", function (e) {
   audioPlay(e.key);
@@ -54,15 +54,20 @@ function audioPlay(key) {
       var clap = new Audio("Audio/tink.wav");
       clap.play();
       break;
-    default: console.log(clickedButton);
+    default: return ;
   }
 }
 
 function buttonAnimation(key) {
-  var activeKey = document.querySelector("." + key.toLowerCase());
-
-  activeKey.classList.add("pressed");
-  setTimeout(() => {
-    activeKey.classList.remove("pressed");
-  }, 100);
+  try {
+    var activeKey = document.querySelector("." + key.toLowerCase());
+  
+    activeKey.classList.add("pressed");
+    setTimeout(() => {
+      activeKey.classList.remove("pressed");
+    }, 100);
+    
+  } catch (error) {
+    return
+  }
 }
