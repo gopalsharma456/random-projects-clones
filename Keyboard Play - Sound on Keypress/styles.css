@@ -1,0 +1,42 @@
+body{
+    background-image: url(./img/pexels.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container{
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+
+.key{
+    height: 100px;
+    width: 100px;
+    border: 5px solid #6d6d6d;
+    margin: 5px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.key h1{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.key p{
+    text-align: center;
+    color: #ffeb56;
+}
+
+.pressed{
+    border: 5px solid #d79e1d;
+    background-color: rgb(135 119 119 / 30%);
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    padding-bottom: 10px;
+}
