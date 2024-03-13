@@ -1,0 +1,43 @@
+body {
+  background-color: #acd4e7;
+}
+
+#todo {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input {
+  height: 40px;
+  width: 40%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-left: 15px;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+#btn {
+  height: 40px;
+  width: 35%;
+  font-size: 30px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+li {
+  background-color: white;
+  height: 30px;
+  padding: 5px 20px;
+  font-size: 30px;
+  border-radius: 5px;
+  list-style: none;
+  margin: 5px 0;
+  text-align: start;
+}
+
+li > button{
+    float: right;
+    margin-top: 5px;
+}

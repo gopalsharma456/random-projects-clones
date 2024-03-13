@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fdfeff;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+header{
+    background-color: #252e3d;
+    color: white;
+    text-align: center;
+    padding: 2% 0 1% 0;
+    /* font-size: 30px; */
+}
+
+#logo{
+    background: transparent;
+    height: 50px;
+    width: 190px;
+}
+
+#main{
+    display: flex;
+    margin-top: 5%;
+
+}
+
+#color{
+    width: 75%;
+    margin-left: 20%;
+}
+
+#details{
+    width: 100%;
+    margin-right: 20%;
+}
+
+h1, h2, p{
+    margin-bottom: 5%;
+    font-weight: 600;
+}
+
+h1{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+#color-options{
+    display: flex;
+}
+
+#color-options > *{
+    height: 45px;
+    width: 60px;
+    margin: 0 5px 30px 5px;
+    border-radius: 5px;   
+    background-color: aquamarine;
+}
+
+#blue{
+    background-color: #565681;
+}
+
+#purple{
+    background-color: #8a5362;
+}
+
+#black{
+    background-color: #23211f;
+}
+
+#red{
+    background-color: #ca3d22 ;
+}
+
+#pink{
+    background-color: #e9c7be ;
+}
+
+#time, #hRate{
+    background-color: #dddcdd;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+#buy-now{
+    background-color: #f08e1d;
+    border: none;
+    padding: 20px 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#watch{
+    position: relative;
+}
+
+#timeBlock{
+    display: inline-block;
+    /* display: none; */
+    background: transparent;
+    color: #fffefe;
+    padding: 5px 20px;
+    position: absolute;
+    top: 43%;
+    left: 45%;
+    font-size: 40px;
+}
+
+#HRBlock img{
+    /* display: none; */
+    background: transparent;
+    color: #fffefe;
+    padding: 5px 10px;
+    position: absolute;
+    top: 40%;
+    left: 52%;
+    height: 10%;
+    width: 10%;
+}
+
+#HRBlock{
+    display: none;
+}
+
+#HeartRate{
+    position: absolute;
+    background: transparent;
+    color: white;
+    top: 48%;
+    left: 54%;
+    height: 10%;
+    font-size: 40px;
+    width: 10%;
+}
+
+#time:focus, #hRate:focus{
+    background-color: #f08e1d;
+}
+
+#time:hover, #hRate:hover{
+    background-color: #d7cf95;
+}
